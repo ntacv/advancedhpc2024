@@ -1,0 +1,240 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.10.13)  13 OCT 2024 15:39
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**Report.2.Device.Info.tex
+(./Report.2.Device.Info.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count193
+\l__pdf_internal_box=\box50
+)
+No file Report.2.Device.Info.aux.
+\openout1 = `Report.2.Device.Info.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+! You can't use `macro parameter character #' in horizontal mode.
+l.16 #
+      print(numba.cuda.select_device())
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.16 #print(numba.cuda.select_
+                              device())
+? 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 16.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.18 
+     
+? 
+
+Overfull \hbox (169.89458pt too wide) in paragraph at lines 13--18
+\OT1/cmr/m/n/10 !pip in-stall numba im-port numba im-port numba.cuda as cuda pr
+int(numba.cuda.select$[]\OML/cmm/m/it/10 evice\OT1/cmr/m/n/10 ())\OML/cmm/m/it/
+10 print\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 numba:cuda:gpus\OT1/cmr/m/n/10 )$ 
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.19 #
+       Loop through each available GPU device
+? 
+! You can't use `macro parameter character #' in horizontal mode.
+l.21   #
+         Select the GPU device
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.23   device = cuda.select_
+                            device(i)
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.24 
+     
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.25   #
+         Get and print the device name
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.28   #
+         Get and print the compute capability
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.29 ...int("Compute Capability:", device.compute_
+                                                  capability)
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.30 
+     
+? 
+
+Overfull \hbox (75.75995pt too wide) in paragraph at lines 28--30
+[]\OT1/cmr/m/n/10 Get and print the com-pute ca-pa-bil-ity print("Compute Ca-pa
+-bil-ity:", device.compute$[]\OML/cmm/m/it/10 apability\OT1/cmr/m/n/10 )$ 
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.31   #
+         Get total memory information
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.32   free_
+            mem, total_mem = cuda.current_context().get_memory_info()
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.35 
+     
+? 
+
+Overfull \hbox (181.60515pt too wide) in paragraph at lines 31--35
+[]\OT1/cmr/m/n/10 Get to-tal mem-ory in-for-ma-tion free$[]\OML/cmm/m/it/10 em;
+ total[]em \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 cuda:current[]ontext\OT1/cmr/m/n/
+10 ()\OML/cmm/m/it/10 :get[]emory[]nfo\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 print\
+OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 TotalMemory
+ \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (48.74535pt too wide) in paragraph at lines 31--35
+[]\OML/cmm/m/it/10 MB\OT1/cmr/m/n/10 ")\OML/cmm/m/it/10 print\OT1/cmr/m/n/10 (\
+OML/cmm/m/it/10 f\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 FreeMemory \OT1/cmr/m/n/10 :
+ []\OML/cmm/m/it/10 MB\OT1/cmr/m/n/10 ")$ 
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.36   #
+         Get additional device details
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.38 ...nt(f"  Max Threads per Block: {device.MAX_
+                                                  THREADS_PER_BLOCK}")
+? 
+! Extra }, or forgotten $.
+l.38 ... per Block: {device.MAX_THREADS_PER_BLOCK}
+                                                  ")
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.43 
+     
+? 
+
+Overfull \hbox (9.31607pt too wide) in paragraph at lines 36--43
+\OT1/cmr/m/n/10 Block: device.MAX$[]\OML/cmm/m/it/10 HREADS[]ER[]LOCK\OT1/cmr/m
+/n/10 ")\OML/cmm/m/it/10 print\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f\OT1/cmr/m/n/1
+0 "\OML/cmm/m/it/10 MaxBlockDimensions \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (186.04974pt too wide) in paragraph at lines 36--43
+[]\OML/cmm/m/it/10 ; []; []\OT1/cmr/m/n/10 ")\OML/cmm/m/it/10 print\OT1/cmr/m/n
+/10 (\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 MaxGridDimensions \OT1
+/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (103.40292pt too wide) in paragraph at lines 36--43
+[]\OML/cmm/m/it/10 ; []; []\OT1/cmr/m/n/10 ")\OML/cmm/m/it/10 print\OT1/cmr/m/n
+/10 (\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 WarpSize \OT1/cmr/m/n/
+10 :
+ []
+
+
+Overfull \hbox (218.67816pt too wide) in paragraph at lines 36--43
+[]\OT1/cmr/m/n/10 ")\OML/cmm/m/it/10 print\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f\O
+T1/cmr/m/n/10 "\OML/cmm/m/it/10 MaxSharedMemoryperBlock \OT1/cmr/m/n/10 : []\OM
+L/cmm/m/it/10 KB\OT1/cmr/m/n/10 ")$ 
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.44   #
+         Reset the device (optional)
+? 
+! Undefined control sequence.
+l.47   print("\n
+                " + "-" * 40 + "\n")
+? 
+! Undefined control sequence.
+l.47   print("\n" + "-" * 40 + "\n
+                                  ")
+? 
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+(./Report.2.Device.Info.aux) )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 38 ({)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 403 strings out of 480247
+ 7571 string characters out of 5896150
+ 297493 words of memory out of 5000000
+ 18429 multiletter control sequences out of 15000+600000
+ 469864 words of font info for 30 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 34i,5n,38p,155b,137s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on Report.2.Device.Info.pdf (1 page, 75158 bytes).
+PDF statistics:
+ 33 PDF objects out of 1000 (max. 8388607)
+ 19 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,63 @@
+
+\documentclass{article}
+\begin{document}
+
+
+\section{Introduction}
+
+Nathan Choukroun labwork
+Google collab gpus
+
+\section{Code to run}
+
+!pip install numba
+import numba
+import numba.cuda as cuda
+#print(numba.cuda.select_device())
+print(numba.cuda.gpus)
+
+# Loop through each available GPU device
+for i in range(len(cuda.gpus)):
+  # Select the GPU device
+  device = cuda.gpus[i]
+  device = cuda.select_device(i)
+
+  # Get and print the device name
+  print(f"Device {i} - Name:", device.name)
+
+  # Get and print the compute capability
+  print("Compute Capability:", device.compute_capability)
+
+  # Get total memory information
+  free_mem, total_mem = cuda.current_context().get_memory_info()
+  print(f"Total Memory: {total_mem / (1024 ** 2):.2f} MB")
+  print(f"Free Memory: {free_mem / (1024 ** 2):.2f} MB")
+  
+  # Get additional device details
+  print("Details:")
+  print(f"  Max Threads per Block: {device.MAX_THREADS_PER_BLOCK}")
+  print(f"  Max Block Dimensions: {device.MAX_BLOCK_DIM_X}, {device.MAX_BLOCK_DIM_Y}, {device.MAX_BLOCK_DIM_Z}")
+  print(f"  Max Grid Dimensions: {device.MAX_GRID_DIM_X}, {device.MAX_GRID_DIM_Y}, {device.MAX_GRID_DIM_Z}")
+  print(f"  Warp Size: {device.WARP_SIZE}")
+  print(f"  Max Shared Memory per Block: {device.MAX_SHARED_MEMORY_PER_BLOCK / 1024:.2f} KB")
+  
+  # Reset the device (optional)
+  device.reset()
+
+  print("\n" + "-" * 40 + "\n")
+
+\section{Results}
+
+<Managed Device 0>
+Device 0 - Name: b'Tesla T4'
+Compute Capability: (7, 5)
+Total Memory: 15102.06 MB
+Free Memory: 14999.06 MB
+Details:
+  Max Threads per Block: 1024
+  Max Block Dimensions: 1024, 1024, 64
+  Max Grid Dimensions: 2147483647, 65535, 65535
+  Warp Size: 32
+  Max Shared Memory per Block: 48.00 KB
+
+\end{document}
