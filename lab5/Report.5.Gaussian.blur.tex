@@ -1,0 +1,10 @@
+
+
+__shared__ char tile[BLOCK_SIZE];
+int tid = ...;
+tile[threadIdx.x] = input[tid].x;
+
+
+
+# Synchronize between threads in a block
+__syncthreads()
