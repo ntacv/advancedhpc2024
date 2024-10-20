@@ -1,0 +1,41 @@
+
+\documentclass{article}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\begin{document}
+
+\title{LabWork3}
+\section{Introduction}
+
+Nathan Choukroun labwork 4
+
+2D block sizing of greyscale function
+
+\section{Code to run}
+
+
+blockSize = (32,32)
+gridX = imageWidth / blockSize[0]
+gridY = imageHeight / blockSize[1]
+gridSize = (gridX,gridY)
+
+kernel(){
+    tidx = cuda.threadIdx.x + cuda.blockIdx.x * cuda.blockDim.x
+    tidy = cuda.threadIdx.y + cuda.blockIdx.y * cuda.blockDim.y 
+}
+for i in range(1,maxBlockSize):
+  if i<=32:
+    blockSize = (i*32,i*32)
+  else:
+    grayscale[gridSize, blockSize](devData, devOutput)
+
+
+\section{Results}
+
+We see that processor blocks can be computed for different dimensions, but last labwork was running as 1D array along the lines of the image. Actually, 2D computing is more adapted to image processing. We then need to change the blockSize variable to a 2D tuple.Starting at 32 for optimisation. 
+
+To change the dimension we fix the block size to the optimised value of 32 and we adapt the grid size to the image width and height. Then to run through the image, we define a tidx (ThreadIdX) and tidy (ThreadIdY) depending on the block index and the block dimension. The image will be processed by block of 32x32 pixels and the threadId will run through each block. 
+
+It is not useful to compare running time between multiples of 32, so we adapt the loop to multiple block size.  
+
+\end{document}
